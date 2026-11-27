@@ -1,0 +1,20 @@
+K-SECI PHASE 16 AUTOMATED TEST RESULTS
+====================================
+
+Checks executed in the packaging environment:
+[PASS] App source compiles (syntax-only)
+[PASS] Expected six dashboard tabs are present in app source
+[PASS] Crime CSV exists, has expected columns, and has records
+[PASS] Karachi boundary ZIP contains .shp, .shx, and .dbf components
+[PASS] GIS export controls/GeoJSON and administrative map tokens are present
+[PASS] requirements.txt exists and lists Streamlit
+
+Automated result: 6 passed, 0 failed.
+
+LIMITATION:
+Streamlit is not installed in the packaging environment. Therefore the dashboard was
+not launched and live interactive/browser testing (charts, controls, downloads,
+visual layout, and runtime behavior) remains for the user to check locally.
+
+Crime data are range-level, not town-geocoded. GIS boundaries are administrative;
+map styling must not be interpreted as town-level crime counts or crime intensity.
